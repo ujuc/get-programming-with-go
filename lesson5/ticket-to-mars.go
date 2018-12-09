@@ -22,7 +22,7 @@ func main() {
 		trip_type := ""
 		price := 0
 
-		switch num := rand.Intn(3); num {
+		switch rand.Intn(3) {
 		case 1:
 			spaceline = "SpaceX"
 		case 2:
@@ -44,7 +44,7 @@ func main() {
 			price = rangeRandom(46, 50)
 		}
 
-		if num := rand.Intn(2); num == 0 {
+		if rand.Intn(2) == 0 {
 			trip_type = "One-way"
 		} else {
 			trip_type = "Round-trip"
